@@ -75,19 +75,29 @@
             <h1>
                 <center>SpeechRefiner: Towards General Perceptual Quality Refinement for Front-End Algorithms</center>
             </h1>
+              <h3 id="">
+    <center>we can add the author here</center>
+
+    </h3>
                <div>
-        <p>
-		<center>Junjie Li<sup>1</sup>, Ruijie Tao<sup>3</sup>, Zexu Pan<sup>3</sup>, Meng Ge<sup>3</sup>, Shuai Wang<sup>1</sup>, Haizhou Li<sup>1,2,3</sup> </center>
-        <center><sup>1</sup>Shenzhen Research Institute of Big Data, Shenzhen, China</center>
-        <center><sup>2</sup>The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen), China</center>
-        <center><sup>3</sup>Department of Electrical and Computer Engineering, National University of Singapore, Singapore </center>
-		</p>
       </div>
          </header>
       </article>
       <div>
       <p><b>Abstract: </b>
-Speech restoration (SR) is a task of converting degraded speech signals into high-quality ones. In this study, we propose a robust SR model called <I>Miipher</I>, and apply Miipher to a new SR application: increasing the amount of high-quality training data for speech generation by converting speech samples collected from the Web to studio-quality. To make our SR model robust against various degradation, we use (i) a speech representation extracted from w2v-BERT for the input feature, and (ii) a text representation extracted from transcripts via PnG-BERT as a linguistic conditioning feature. Experiments show that Miipher (i) is robust against various audio degradation and (ii) enable us to train a high-quality text-to-speech (TTS) model from restored speech samples collected from the Web.
+Front-end speech processing algorithms, such as
+denoising, de-reverberation, and speech separation, are widely
+adopted both as standalone applications and as preprocessing
+steps for downstream tasks. However, the processing can be
+insufficient, leaving residual noises or introducing new artifacts.
+These issues are often not reflected in terms of metrics such
+as SI-SNR but are more apparent in the perceptual quality
+experienced by listeners. In this work, we propose SpeechRefiner
+to tackle this problem. SpeechRefiner is a post-processor that
+can be integrated with different front-end algorithms. Our
+experiments demonstrate that the proposed model, trained on
+a single impairment source, can generalize to different ones,
+significantly improving the perceptual quality of the audio.
 	  <br /><br />
       <img src="data/overview.png" width="700px" class="center"/> <br />
       </p>
@@ -95,50 +105,44 @@ Speech restoration (SR) is a task of converting degraded speech signals into hig
 
 
 <hr>
-<h2 id="intermediate">Comparison on a synthesized dataset:</h2>
+<h2 id="intermediate">Comparison on various speech front-end algorithms:</h2>
 <p>
-This section shows samples of the objective experiments. We evaluated the effectiveness of w2v-BERT [1] and PnG-BERT [2] while comparing the sound quality between the studio-recorded original speech and restored samples from artificially contaminated samples.
-Each table includes the studio-recorded clean target, simulated noisy signal, and outputs of four patterns model using either w2v-BERT features or log-mel spectrogram as the input feature. The four pattern include "full model (i.e. uses both PnG-BERT features and speaker embedding [3])", "w/o text conditioning (i.e. without PnG-BERT)", "w/o speaker embedding", and "w/o text conditioning & speaker embedding".
+This section shows samples of different systems on various speech front-end algorithms. The “VoiceFixer[1]” serves as the baseline, while "Conformer+regre" system is our Conformer-based model that applies the VoiceFixer loss function. The “SpeechRefiner” represents our proposed model.
 </p>
-
 <p>
 
 <table>
 <tbody>
-    <b>Example 1: </b> <I>The Albanian Minister sidestepped the Italian Military Mission, and appointed himself Chief of Staff.</I> <br />
-    <tr>
-        <th align="center"> </th>
-        <th align="center"> Clean target<br /></th>
-        <th align="center"> Noisy input<br /></th>
-    </tr>
-    <tr>
-        <th align="center"> </th>
-        <td align="center"> <audio controls=""><source src="data/obj1_clean.wav"></audio> <img src="data/obj1_gt.png" width="300" alt=""/></td>
-        <td align="center"> <audio controls=""><source src="data/obj1_noisy.wav"></audio> <img src="data/obj1_noisy.png" width="300" alt=""/></td>
-    </tr>
+
+    <h3>Denoising: Tencent </h3>
     <tr>
         <th align="center"> <br /></th>
     </tr>
     <tr>
-        <th align="center"> Feature<br /></th>
-        <th align="center"> Full model<br /></th>
-        <th align="center"> w/o text conditioning<br /></th>
-        <th align="center"> w/o speaker embedding<br /></th>
-        <th align="center"> w/o text conditioning & speaker embedding<br /></th>
+        <th align="center"> Distorted Speech<br /></th>
+        <th align="center"> VoiceFixer[1]<br /></th>
+        <th align="center"> Conformer+regre<br /></th>
+        <th align="center"> SpeechRefiner<br /></th>
     </tr>
     <tr>
-        <th align="center">w2v-BERT</th>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> <img src="data/obj1_w2v_full.png" width="300" alt=""/></td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> <img src="data/obj1_w2v_wo_png.png" width="300" alt=""/></td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> <img src="data/obj1_w2v_wo_dvec.png" width="300" alt=""/></td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> <img src="data/obj1_w2v_wo_png_dvec.png" width="300" alt=""/></td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
     </tr>
     <tr>
-        <th align="center">log-mel</th>
-        <td align="center"> <audio controls=""><source src="data/obj1_logmel.wav"></audio> <img src="data/obj1_logmel_full.png" width="300" alt=""/></td>
-        <td align="center"> <audio controls=""><source src="data/obj1_logmel_wo_text.wav"></audio> <img src="data/obj1_logmel_wo_png.png" width="300" alt=""/></td>
-        <td align="center"> <audio controls=""><source src="data/obj1_logmel_wo_dvec.wav"></audio> <img src="data/obj1_logmel_wo_dvec.png" width="300" alt=""/></td>
-        <td align="center"> <audio controls=""><source src="data/obj1_logmel_wo_text_dvec.wav"></audio> <img src="data/obj1_logmel_wo_png_dvec.png" width="300" alt=""/></td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+    </tr>
+    </tr>
+    <tr>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
+    </tr>
     </tr>
 </tbody>
 </table><br />
