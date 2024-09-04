@@ -181,28 +181,40 @@ This section shows samples of different systems on various speech front-end algo
     <h3>Denoising: Tencent </h3>
 
     <tr>
+        <th align="center"> Audio No.<br /></th>
         <th align="center"> Distorted Speech<br /></th>
         <th align="center"> VoiceFixer[1]<br /></th>
         <th align="center"> Conformer+regre<br /></th>
         <th align="center"> SpeechRefiner<br /></th>
     </tr>
-    <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+     <tr>
+         <th align="center">1</th>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/noisy/1089_134686_000002_000001_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/vf/1089_134686_000002_000001_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/cr/1089_134686_000002_000001_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/16/1089_134686_000002_000001_noise_out_3a.wav"></audio> </td>
     </tr>
    <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+       <th align="center">2</th>
+     <td align="center"> <audio controls=""><source src="./audio/tencent/noisy/1089_134686_000002_000002_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/vf/1089_134686_000002_000002_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/cr/1089_134686_000002_000002_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/16/1089_134686_000002_000002_noise_out_3a.wav"></audio> </td>
     </tr>
     <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+        <th align="center">3</th>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/noisy/1089_134686_000009_000007_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/vf/1089_134686_000009_000007_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/cr/1089_134686_000009_000007_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/16/1089_134686_000009_000007_noise_out_3a.wav"></audio> </td>
+
+    </tr>
+  <tr>
+        <th align="center">4</th>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/noisy/1089_134686_000011_000001_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/vf/1089_134686_000011_000001_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/cr/1089_134686_000011_000001_noise_out_3a.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/tencent/16/1089_134686_000011_000001_noise_out_3a.wav"></audio> </td>
     </tr>
 </tbody>
 </table><br />
@@ -210,29 +222,41 @@ This section shows samples of different systems on various speech front-end algo
 <tbody>
 
     <h3>Dereverberation: SGMSE+ </h3>
-        <tr>
+            <tr>
+        <th align="center"> Audio No.<br /></th>
         <th align="center"> Distorted Speech<br /></th>
         <th align="center"> VoiceFixer[1]<br /></th>
         <th align="center"> Conformer+regre<br /></th>
         <th align="center"> SpeechRefiner<br /></th>
     </tr>
-    <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+     <tr>
+         <th align="center">5</th>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/noise/440c0205_4_0.15_-10.1.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/vf/440c0205_4_0.15_-10.1.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/cr/440c0205_4_0.15_-10.1.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/16/440c0205_4_0.15_-10.1.wav"></audio> </td>
     </tr>
    <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+       <th align="center">6</th>
+     <td align="center"> <audio controls=""><source src="./audio/sgmse/noise/440c0208_7_0.19_-17.7.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/vf/440c0208_7_0.19_-17.7.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/cr/440c0208_7_0.19_-17.7.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/16/440c0208_7_0.19_-17.7.wav"></audio> </td>
     </tr>
     <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+        <th align="center">7</th>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/noise/440c0209_8_0.22_-14.0.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/vf/440c0209_8_0.22_-14.0.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/cr/440c0209_8_0.22_-14.0.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/16/440c0209_8_0.22_-14.0.wav"></audio> </td>
+
+    </tr>
+  <tr>
+        <th align="center">8</th>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/noise/440o030l_60_0.21_-15.9.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/vf/440o030l_60_0.21_-15.9.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/cr/440o030l_60_0.21_-15.9.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/sgmse/16/440o030l_60_0.21_-15.9.wav"></audio> </td>
     </tr>
 </tbody>
 </table><br />
@@ -241,29 +265,41 @@ This section shows samples of different systems on various speech front-end algo
 
     <h3>Speech Separation: ConvTasNet </h3>
 
-        <tr>
+         <tr>
+        <th align="center"> Audio No.<br /></th>
         <th align="center"> Distorted Speech<br /></th>
         <th align="center"> VoiceFixer[1]<br /></th>
         <th align="center"> Conformer+regre<br /></th>
         <th align="center"> SpeechRefiner<br /></th>
     </tr>
-    <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+     <tr>
+         <th align="center">9</th>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/noisy/1.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/vf/1.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/cr/1.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/16/1.wav"></audio> </td>
     </tr>
    <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+       <th align="center">10</th>
+     <td align="center"> <audio controls=""><source src="./audio/speechseparation/noisy/103.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/vf/103.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/cr/103.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/16/103.wav"></audio> </td>
     </tr>
     <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+        <th align="center">11</th>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/noisy/104.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/vf/104.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/cr/104.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/16/104.wav"></audio> </td>
+
+    </tr>
+  <tr>
+        <th align="center">12</th>
+       <td align="center"> <audio controls=""><source src="./audio/speechseparation/noisy/105.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/vf/105.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/cr/105.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/speechseparation/16/105.wav"></audio> </td>
     </tr>
 </tbody>
 </table><br />
@@ -271,29 +307,41 @@ This section shows samples of different systems on various speech front-end algo
 <tbody>
 
     <h3>Audio-TSE: Spex+ </h3>
-       <tr>
+          <tr>
+        <th align="center"> Audio No.<br /></th>
         <th align="center"> Distorted Speech<br /></th>
         <th align="center"> VoiceFixer[1]<br /></th>
         <th align="center"> Conformer+regre<br /></th>
         <th align="center"> SpeechRefiner<br /></th>
     </tr>
-    <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+     <tr>
+         <th align="center">13</th>
+        <td align="center"> <audio controls=""><source src="./audio/spex/noisy/Utt1-4077-13754-0000_2830-3980-0074-T2830.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/vf/Utt1-4077-13754-0000_2830-3980-0074-T2830.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/cr/Utt1-4077-13754-0000_2830-3980-0074-T2830.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/16/Utt1-4077-13754-0000_2830-3980-0074-T2830.wav"></audio> </td>
     </tr>
    <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+       <th align="center">14</th>
+     <td align="center"> <audio controls=""><source src="./audio/spex/noisy/Utt1001-7021-85628-0019_7729-102255-0033-T7021.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/vf/Utt1001-7021-85628-0019_7729-102255-0033-T7021.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/cr/Utt1001-7021-85628-0019_7729-102255-0033-T7021.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/16/Utt1001-7021-85628-0019_7729-102255-0033-T7021.wav"></audio> </td>
     </tr>
     <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+        <th align="center">15</th>
+        <td align="center"> <audio controls=""><source src="./audio/spex/noisy/Utt1003-4507-16021-0050_2094-142345-0054-T2094.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/vf/Utt1003-4507-16021-0050_2094-142345-0054-T2094.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/cr/Utt1003-4507-16021-0050_2094-142345-0054-T2094.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/16/Utt1003-4507-16021-0050_2094-142345-0054-T2094.wav"></audio> </td>
+
+    </tr>
+  <tr>
+        <th align="center">16</th>
+       <td align="center"> <audio controls=""><source src="./audio/spex/noisy/Utt1005-8230-279154-0031_237-126133-0016-T237.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/vf/Utt1005-8230-279154-0031_237-126133-0016-T237.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/cr/Utt1005-8230-279154-0031_237-126133-0016-T237.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/spex/16/Utt1005-8230-279154-0031_237-126133-0016-T237.wav"></audio> </td>
     </tr>
 </tbody>
 </table><br />
@@ -301,29 +349,41 @@ This section shows samples of different systems on various speech front-end algo
 <tbody>
 
     <h3>AV-TSE: MuSE </h3>
-        <tr>
+                <tr>
+        <th align="center"> Audio No.<br /></th>
         <th align="center"> Distorted Speech<br /></th>
         <th align="center"> VoiceFixer[1]<br /></th>
         <th align="center"> Conformer+regre<br /></th>
         <th align="center"> SpeechRefiner<br /></th>
     </tr>
-    <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+     <tr>
+         <th align="center">17</th>
+        <td align="center"> <audio controls=""><source src="./audio/muse/noisy/10.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/vf/10.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/cr/10.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/16/10.wav"></audio> </td>
     </tr>
    <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+       <th align="center">18</th>
+   <td align="center"> <audio controls=""><source src="./audio/muse/noisy/103.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/vf/103.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/cr/103.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/16/103.wav"></audio> </td>
     </tr>
     <tr>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_dvec.wav"></audio> </td>
-        <td align="center"> <audio controls=""><source src="data/obj1_w2v_wo_text_dvec.wav"></audio> </td>
+        <th align="center">19</th>
+       <td align="center"> <audio controls=""><source src="./audio/muse/noisy/11.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/vf/11.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/cr/11.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/16/11.wav"></audio> </td>
+
+    </tr>
+  <tr>
+        <th align="center">20</th>
+       <td align="center"> <audio controls=""><source src="./audio/muse/noisy/111.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/vf/111.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/cr/111.wav"></audio> </td>
+        <td align="center"> <audio controls=""><source src="./audio/muse/16/111.wav"></audio> </td>
     </tr>
 </tbody>
 </table><br />
