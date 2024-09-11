@@ -73,12 +73,12 @@
        <article>
          <header>
             <h1>
-                <center>SpeechRefiner: Towards General Perceptual Quality Refinement for Front-End Algorithms</center>
+                <center>SpeechRefiner: Towards Perceptual Quality Refinement for Front-End Algorithms</center>
             </h1>
-              <h3 id="">
-    <center>we can add the author here</center>
+<!--              <h3 id="">-->
+<!--    <center>we can add the author here</center>-->
 
-    </h3>
+<!--    </h3>-->
                <div>
       </div>
          </header>
@@ -99,14 +99,14 @@ experiments demonstrate that the proposed model, trained on
 a single impairment source, can generalize to different ones,
 significantly improving the perceptual quality of the audio.
 	  <br /><br />
-      <img src="./images/speechrefiner.jpg" width="700px" class="center"/>
+      <img src="./images/speechrefiner.drawio.pdf" width="700px" class="center"/>
           <br />
       </p>
 
 <hr>
 <h2 id="intermediate">Comparison on different steps:</h2>
 <p>
-This section shows samples  for speechRefiner on Tencent dataset at different steps.
+This section shows samples  for speechRefiner on Denoise(Tencent) dataset at different steps.
 </p>
 <p>
 <div style="overflow-x: auto;">
@@ -171,7 +171,7 @@ This section shows samples  for speechRefiner on Tencent dataset at different st
 <hr>
 <h2 id="intermediate">Comparison on various speech front-end algorithms:</h2>
 <p>
-This section shows samples of different systems on various speech front-end algorithms. The “VoiceFixer[1]” serves as the baseline, while "Conformer+regre" system is our Conformer-based model that applies the VoiceFixer loss function. The “SpeechRefiner” represents our proposed model with 16 ode steps.
+This section shows samples of different systems on various speech front-end algorithms. The “VoiceFixer[1]” serves as the ResUNet-based model from the original paper, while "VoiceFixer$_\text{conformer}$" system is the ResUNet in VoiceFixer with the Conformer-based architecture same as SpeechRefiner. The “SpeechRefiner” represents our proposed model with 16 ode steps.
 </p>
 <p>
 
@@ -184,7 +184,7 @@ This section shows samples of different systems on various speech front-end algo
         <th align="center"> Audio No.<br /></th>
         <th align="center"> Distorted Speech<br /></th>
         <th align="center"> VoiceFixer[1]<br /></th>
-        <th align="center"> Conformer+regre<br /></th>
+        <th align="center"> VoiceFixer$_\text{conformer}$<br /></th>
         <th align="center"> SpeechRefiner<br /></th>
     </tr>
      <tr>
@@ -226,7 +226,7 @@ This section shows samples of different systems on various speech front-end algo
         <th align="center"> Audio No.<br /></th>
         <th align="center"> Distorted Speech<br /></th>
         <th align="center"> VoiceFixer[1]<br /></th>
-        <th align="center"> Conformer+regre<br /></th>
+        <th align="center"> VoiceFixer$_\text{conformer}$<br /></th>
         <th align="center"> SpeechRefiner<br /></th>
     </tr>
      <tr>
@@ -269,7 +269,7 @@ This section shows samples of different systems on various speech front-end algo
         <th align="center"> Audio No.<br /></th>
         <th align="center"> Distorted Speech<br /></th>
         <th align="center"> VoiceFixer[1]<br /></th>
-        <th align="center"> Conformer+regre<br /></th>
+        <th align="center"> VoiceFixer$_\text{conformer}$<br /></th>
         <th align="center"> SpeechRefiner<br /></th>
     </tr>
      <tr>
@@ -311,7 +311,7 @@ This section shows samples of different systems on various speech front-end algo
         <th align="center"> Audio No.<br /></th>
         <th align="center"> Distorted Speech<br /></th>
         <th align="center"> VoiceFixer[1]<br /></th>
-        <th align="center"> Conformer+regre<br /></th>
+        <th align="center"> VoiceFixer$_\text{conformer}$<br /></th>
         <th align="center"> SpeechRefiner<br /></th>
     </tr>
      <tr>
@@ -353,7 +353,7 @@ This section shows samples of different systems on various speech front-end algo
         <th align="center"> Audio No.<br /></th>
         <th align="center"> Distorted Speech<br /></th>
         <th align="center"> VoiceFixer[1]<br /></th>
-        <th align="center"> Conformer+regre<br /></th>
+        <th align="center"> VoiceFixer$_\text{conformer}$<br /></th>
         <th align="center"> SpeechRefiner<br /></th>
     </tr>
      <tr>
